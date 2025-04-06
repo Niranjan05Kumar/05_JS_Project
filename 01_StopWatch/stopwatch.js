@@ -9,60 +9,48 @@ let min = 0;
 let hours = 0;
 let timerId = null;
 
-StartButton.addEventListener("click", function(){
-    if(timerId !== null){
-        clearInterval(timerId);
-    }
-    timerId = setInterval(StartTimer, 10);
-});
-
-StopButton.addEventListener("click", function(){
+StartButton.addEventListener("click", function () {
+  if (timerId !== null) {
     clearInterval(timerId);
-    // timerId = null;
+  }
+  timerId = setInterval(StartTimer, 10);
 });
 
-ResetButton.addEventListener("click", function(){
-    clearInterval(timerId);
-    // timerId = null;
-    Display.innerHTML = "00:00:00:00";
-    msec = sec = min = hours = 0;
-    // StartButton.disabled = false;
+StopButton.addEventListener("click", function () {
+  clearInterval(timerId);
+  // timerId = null;
 });
 
-function StartTimer(){
-    msec++;
-    if(msec >= 100){
-        sec++;
-        msec = 0;
-    }
-    if(sec >= 60){
-        sec = 0;
-        min++;
-    }
-    if(min >= 60){
-        min = 0;
-        hours++;
-    }
-    
-    let msecStr = msec < 10 ? `0${msec}` : msec;
-    let secStr = sec < 10 ? "0" + sec : sec;
-    let minStr = min < 10 ? `0${min}` : min;
-    let hoursStr = hours < 10 ? `0${hours}` : hours;
+ResetButton.addEventListener("click", function () {
+  clearInterval(timerId);
+  // timerId = null;
+  Display.innerHTML = "00:00:00:00";
+  msec = sec = min = hours = 0;
+  // StartButton.disabled = false;
+});
 
-    Display.innerHTML = `${hoursStr}:${minStr}:${secStr}:${msecStr}`;
+function StartTimer() {
+  msec++;
+  if (msec >= 100) {
+    sec++;
+    msec = 0;
+  }
+  if (sec >= 60) {
+    sec = 0;
+    min++;
+  }
+  if (min >= 60) {
+    min = 0;
+    hours++;
+  }
+
+  let msecStr = msec < 10 ? `0${msec}` : msec;
+  let secStr = sec < 10 ? "0" + sec : sec;
+  let minStr = min < 10 ? `0${min}` : min;
+  let hoursStr = hours < 10 ? `0${hours}` : hours;
+
+  Display.innerHTML = `${hoursStr}:${minStr}:${secStr}:${msecStr}`;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let startTime = 0;
 // let elapsedTime = 0;
