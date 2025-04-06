@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 80px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #1c1c1c;
+    background-color: rgb(52, 96, 228);
+}
+.container h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.stopwatch .timedisplay{
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+.controlBtns{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+.controlBtns button{
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#startBtn{
+    background-color: #4caf50;
+}
+#startBtn:hover{
+    background-color: #2e9433;
+}
+#stopBtn{
+    background-color: #f44336;
+}
+#stopBtn:hover{
+    background-color: #b81f1c;
+}
+#resetBtn{
+    background-color: #008cba;
+}
+#resetBtn:hover{
+    background-color: #007bb5;
+}
