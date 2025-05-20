@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Form Validation</h1>
+
+        <form id="form" onsubmit="return validation()">
+
+            <div class="email-group">
+                <label for="email">Email: <span id="email-error"></span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            
+            <div class="phone-group">
+                <label for="phone">Phone: <span id="phone-error"></span></label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone">
+            </div>
+
+            <div class="password-group">
+                <label for="password">Password: <span id="password-error"></span></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+
+            <div class="confirm-password-group">
+                <label for="confirm-password">Confirm Password: <span id="confirm-password-error"></span></label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+            </div>
+
+            <input id="submit" type="submit" value="Submit">
+            
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
