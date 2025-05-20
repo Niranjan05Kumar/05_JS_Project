@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <div class="content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <span id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis suscipit iure.</span>
+            <span><i class="ri-double-quotes-r"></i></span>
+        </div>
+        <h4 class="author">
+            <span>--</span>
+            <span id="name">A.P.J. Kalam</span>
+        </h4>
+        <div class="buttons">
+            <ul>
+                <li id="sound"><i class="ri-volume-up-fill"></i></li>
+                <li id="copy"><i class="ri-clipboard-fill"></i></li>
+                <li id="twitter"><i class="ri-twitter-x-fill"></i></li>
+            </ul>
+            <button id="new-quote">New Quote</button>
+        </div>
+        <div id="copied-successfully">
+            <i class="ri-check-line"></i> Quote Copied 
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
