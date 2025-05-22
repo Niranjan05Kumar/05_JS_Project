@@ -6,7 +6,7 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     background: linear-gradient(45deg, #5987a4, #05376d);
@@ -184,7 +184,9 @@ h1 {
 }
 
 @media screen and (max-width:550px) {
-
+    body{
+        height: 100dvb;
+    }
     .container {
         width: 90vw;
         padding: 7vw 5vw;

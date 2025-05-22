@@ -6,7 +6,7 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +97,9 @@ h2 {
 
 /* Responsive Design */
 @media screen and (max-width: 480px) {
+    body{
+        height: 100dvb;
+    }
     .card {
         width: 90vw;
         padding: 6vw;
