@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="out-container">
+        <div class="in-container">
+            <div class="sidebar">
+                <div class="error">
+                    <p> Invalid city name</p>
+                </div>
+                <div class="input-bar">
+                    <i class="ri-map-pin-line"></i>
+                    <input type="text" id="user-location" placeholder="Enter City">
+                    <select id="temp-degree">
+                        <option value="degC">°C</option>
+                        <option value="degF">°F</option>
+                    </select>
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="weather-icon">
+                    <h2>32°C</h2>
+                    <img src="/10_weather_app/images/drizzle.png">
+                </div>
+                <div class="output-bar">
+                    <div class="feel-like">
+                        <h5>Feel Like</h5>
+                        <h2>30°C</h2>
+                    </div>
+                    <div class="cloud">
+                         <h5>Cloud</h5>
+                         <h2>Few Cloud</h2>
+                    </div>
+                    <div class="day-info">
+                        <h5>Date</h5>
+                         <h2>24 may 2025</h2>
+                    </div>
+                    <div class="location">
+                        <h5>Place</h5>
+                        <h2>Dehli, India</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="today-highlights">
+                <h2>Today Highlights</h2>
+                <div class="highlight-box">
+                    <div class="humidity">
+                        <span>Humidity</span>
+                        <img src="/10_weather_app/images/humidity.png">
+                        <h3 class="humidity-val">40%</h3>
+                    </div>
+                    <div class="wind-speed">
+                        <span>Wind Speed</span>
+                        <img src="/10_weather_app/images/wind.png">
+                        <h3 class="wind-val">40%</h3>
+                    </div>
+                    <div class="cloud">
+                        <span>Cloud</span>
+                        <img src="/10_weather_app/images/clouds.png">
+                        <h3 class="cloud-val">40%</h3>
+                    </div>
+                    <div class="pressure">
+                        <span>Pressure</span>
+                        <img src="/10_weather_app/images/pressure.png">
+                        <h3 class="pressure-val">40%</h3>
+                    </div>
+                    <div class="suns">
+                        <div class="sun rise">
+                            <i class="ri-sun-fill"></i>
+                            <span>Sunrise</span>
+                            <span class="sr-val">6:12AM</span>
+                        </div>
+                        <div class="sun set">
+                            <i class="ri-sun-line"></i>
+                            <span>Sunset</span>
+                            <span class="ss-val">6:12PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
