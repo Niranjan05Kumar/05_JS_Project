@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Quiz Configuration Container -->
+    <div class="config-container">
+        <h1>Quiz Configuration</h1>
+        <div class="config-option">
+            <h2>Select Category</h2>
+            <div class="question-categories">
+                <button class="category-option">Programming</button>
+                <button class="category-option">Geography</button>
+                <button class="category-option">Mathematics</button>
+                <button class="category-option">Entertainment</button>
+            </div>
+        </div>
+        <div class="config-number">
+            <h2>No. of Questions</h2>
+            <div class="no-of-question">
+                <button class="number-option">5</button>
+                <button class="number-option">10</button>
+                <button class="number-option">15</button>
+                <button class="number-option">20</button>
+                <button class="number-option">25</button>
+            </div>
+        </div>
+        <button class="start-quiz">Start Quiz</button>
+    </div>
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <header>
+            <h4 class="category-title">Quiz Application</h4>
+            <div class="timer">
+                <span class="material-symbols-outlined">
+                    timer
+                </span>
+                <span class="timer-text"><b>15</b>s</span>
+            </div>
+        </header>
+        <div class="content">
+            <h5 class="question-text">In JavaScript, how do you create a function.</h5>
+            <ul class="asnwer-options">
+                <li class="answer-option">
+                    <span class="optionA">create function myfunction()</span>
+                    <span class="right-answer material-symbols-outlined">
+                        check_circle
+                    </span>
+                    <span class="wrong-answer material-symbols-outlined">
+                        cancel
+                    </span>
+                </li>
+                <li class="answer-option">
+                    <span class="optionB">function myfunction()</span>
+                    <span class="right-answer material-symbols-outlined">
+                        check_circle
+                    </span>
+                    <span class="wrong-answer material-symbols-outlined">
+                        cancel
+                    </span>
+                </li>
+                <li class="answer-option">
+                    <span class="optionC">def myfunction()</span>
+                    <span class="right-answer material-symbols-outlined">
+                        check_circle
+                    </span>
+                    <span class="wrong-answer material-symbols-outlined">
+                        cancel
+                    </span>
+                </li>
+                <li class="answer-option">
+                    <span class="optionD">func myfunction()</span>
+                    <span class="right-answer material-symbols-outlined">
+                        check_circle
+                    </span>
+                    <span class="wrong-answer material-symbols-outlined">
+                        cancel
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <span class="question-status"></span>
+            <button class="next-ques-btn">Next
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+            </button>
+        </footer>
+    </div>
+    <!-- Result Container -->
+    <div class="result-container">
+        <img src="quiz-over.png" class="result-img">
+        <h2>Quiz Completed!</h2>
+        <p></p>
+        <button class="try-again-btn">Try again</button>
+    </div>
+
+
+    <script type="module" src="questions.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
