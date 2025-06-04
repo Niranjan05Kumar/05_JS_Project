@@ -1,4 +1,4 @@
-let btn = document.querySelectorAll(".grid-box button");
+let btns = document.querySelectorAll(".grid-box button");
 let winnerMsg = document.querySelector(".player-turn h2");
 let playerO = document.querySelector(".playerO")
 let playerX = document.querySelector(".playerX")
@@ -18,7 +18,7 @@ let winPattern = [
   [6, 7, 8],
 ];
 playerO.style.backgroundColor = "#eee";
-btn.forEach((btn) => {
+btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (turn) {
       playerX.style.backgroundColor = "#eee";
@@ -40,9 +40,9 @@ btn.forEach((btn) => {
 
 function checkwinner() {
   for (let pattern of winPattern) {
-    let pos1val = btn[pattern[0]].innerText;
-    let pos2val = btn[pattern[1]].innerText;
-    let pos3val = btn[pattern[2]].innerText;
+    let pos1val = btns[pattern[0]].innerText;
+    let pos2val = btns[pattern[1]].innerText;
+    let pos3val = btns[pattern[2]].innerText;
 
     if (pos1val != "" && pos2val != "" && pos3val != "") {
       if (pos1val === pos2val && pos2val === pos3val) {
@@ -61,13 +61,13 @@ function checkwinner() {
 };
 
 function disableBtn(){
-    for( let btns of btn){
-        btns.disabled = true;
+    for( let btn of btns){
+        btn.disabled = true;
     }
 }
 function enableBtn(){
-    for( let btns of btn){
-        btns.disabled = false;
+    for( let btn of btns){
+        btn.disabled = false;
     }
 }
 
@@ -77,8 +77,8 @@ restart.addEventListener("click", resetGame);
 function resetGame(){
     turn = true;
     winnerMsg.style.display = "none";
-    for(let btns of btn){
-        btns.innerText = "";
+    for(let btn of btns){
+        btn.innerText = "";
     }
     enableBtn();
 }
